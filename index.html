@@ -95,51 +95,112 @@
             </div>
         </div>
 
-        <!-- Services -->
-        <div id="services" class="container text-center py-5">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h3 class="fw-bold lh-2 mb-3">OUR SERVIS</h3>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
-                </div>
-            </div>
+    <!-- Explore the Algorithm - Naive Bayes -->
+<div id="services" class="container py-5">
+    <div class="row text-center">
+        <div class="col-lg-8 mx-auto">
+            <h3 class="fw-bold lh-2 mb-3">Explore the Algorithm</h3>
+            <p class="lead text-muted">Ringkasan dasar teori, rumus, dan alur kerja klasifikasi Naive Bayes.</p>
+        </div>
+    </div>
 
-            <div class="row py-4">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="card border-0 rounded-4 shadow-sm">
-                        <div class="card-body p-3 p-sm-5">
-                            <div class="feature-icon-1 bg-primary bg-gradient mb-4">
-                                <i class="bi-filetype-html"></i>
-                            </div>
-                            <h3>Web Design</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+    <div class="row py-4 g-4">
+        <!-- Kotak 1 -->
+        <div class="col-lg-4">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+                <div class="card-body p-4 p-lg-5 text-start">
+                    <div class="text-center mb-4">
+                        <div class="feature-icon-1 bg-primary bg-gradient mx-auto">
+                            <i class="bi-lightbulb"></i>
                         </div>
+                        <h4 class="fw-semibold mt-3 mb-0">Teori &amp; Konsep</h4>
                     </div>
-                </div>
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="card border-0 rounded-4 shadow-sm">
-                        <div class="card-body p-3 p-sm-5">
-                            <div class="feature-icon-1 bg-primary bg-gradient mb-4">
-                                <i class="bi-code-slash"></i>
-                            </div>
-                            <h3>Web Development</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="card border-0 rounded-4 shadow-sm">
-                        <div class="card-body p-3 p-sm-5">
-                            <div class="feature-icon-1 bg-primary bg-gradient mb-4">
-                                <i class="bi-display"></i>
-                            </div>
-                            <h3>Digital Marketing</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-                        </div>
-                    </div>
+                    <p class="text-muted small mb-2">Klasifikasi berbasis probabilitas yang memakai asumsi independensi antar fitur ("naive").</p>
+                    <p class="text-muted small mb-0">Cocok untuk klasifikasi teks dan dataset sederhana karena proses pelatihannya ringan dan cepat.</p>
                 </div>
             </div>
         </div>
+         
+        <!--Kotak 2---->
+        <div class="col-lg-4">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+                <div class="card-body p-4 p-lg-5 text-start">
+                    <div class="text-center mb-4">
+                        <div class="feature-icon-1 bg-primary bg-gradient mx-auto">
+                            <i class="bi-percent"></i>
+                        </div>
+                        <h4 class="fw-semibold mt-3 mb-0">Rumus Dasar</h4>
+                    </div>
+                    <p class="text-muted small mb-2"><strong>P(C|X) = [P(X|C) &times; P(C)] / P(X)</strong></p>
+                    <p class="text-muted small mb-0">Dengan asumsi fitur saling bebas, <strong>P(X|C)</strong> dihitung dari perkalian peluang tiap fitur <strong>P(x<sub>i</sub>|C)</strong> pada kelas <strong>C</strong>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Kotak 3-->
+        <div class="col-lg-4">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+                <div class="card-body p-4 p-lg-5 text-start">
+                    <div class="text-center mb-4">
+                        <div class="feature-icon-1 bg-primary bg-gradient mx-auto">
+                            <i class="bi-gear"></i>
+                        </div>
+                        <h4 class="fw-semibold mt-3 mb-0">Mekanisme Kerja</h4>
+                    </div>
+                    <p class="text-muted small mb-2">1. Hitung probabilitas awal tiap kelas (<em>prior</em>) dan peluang fitur per kelas (<em>likelihood</em>).</p>
+                    <p class="text-muted small mb-0">2. Kalikan nilai <em>prior</em> dan <em>likelihood</em> untuk tiap kelas, lalu pilih skor tertinggi.</p>
+                </div>
+            </div>
+        </div>
+            <!-- Kotak 4 -->
+        <div class="col-lg-4">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+                <div class="card-body p-4 p-lg-5 text-start">
+                    <div class="text-center mb-4">
+                        <div class="feature-icon-1 bg-primary bg-gradient mx-auto">
+                            <i class="bi-layers"></i>
+                        </div>
+                        <h4 class="fw-semibold mt-3 mb-0">Varian Model</h4>
+                    </div>
+                    <p class="text-muted small mb-2"><strong>Gaussian:</strong> dipakai untuk fitur numerik kontinu dengan sebaran distribusi normal.</p>
+                    <p class="text-muted small mb-0"><strong>Multinomial &amp; Bernoulli:</strong> umum dipakai pada analisis teks, frekuensi kata, atau fitur biner.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kotak 5 -->
+        <div class="col-lg-4">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+                <div class="card-body p-4 p-lg-5 text-start">
+                    <div class="text-center mb-4">
+                        <div class="feature-icon-1 bg-primary bg-gradient mx-auto">
+                            <i class="bi-sliders"></i>
+                        </div>
+                        <h4 class="fw-semibold mt-3 mb-0">Laplace Smoothing</h4>
+                    </div>
+                    <p class="text-muted small mb-2">Mengatasi masalah <em>zero probability</em> ketika ada kata atau fitur baru yang belum muncul di data latih.</p>
+                    <p class="text-muted small mb-0">Caranya dengan menambah nilai konstanta kecil (<strong>&alpha; = 1</strong>) pada pembilang agar hasil perkalian tidak nol.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kotak 6 -->
+        <div class="col-lg-4">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+                <div class="card-body p-4 p-lg-5 text-start">
+                    <div class="text-center mb-4">
+                        <div class="feature-icon-1 bg-primary bg-gradient mx-auto">
+                            <i class="bi-check2-circle"></i>
+                        </div>
+                        <h4 class="fw-semibold mt-3 mb-0">Kelebihan &amp; Batasan</h4>
+                    </div>
+                    <p class="text-muted small mb-2"><strong>Kelebihan:</strong> cepat dilatih, hemat komputasi, dan tetap efektif meski jumlah data latih terbatas.</p>
+                    <p class="text-muted small mb-0"><strong>Batasan:</strong> asumsi fitur saling bebas jarang terjadi sepenuhnya pada data dunia nyata.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- About -->
         <div id="about" class="container text-center py-5">
